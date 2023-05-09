@@ -1,5 +1,5 @@
 {
-    "name": "advoor/nova-editor-js",
+    "name": "codedwords/nova-editor-js",
     "description": "A Laravel Nova field bringing EditorJs magic to Nova.",
     "license": "MIT",
     "keywords": [
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Advoor\\NovaEditorJs\\": "src/"
+            "CodedWords\\NovaEditorJs\\": "src/"
         }
     },
     "autoload-dev": {
@@ -54,7 +54,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Advoor\\NovaEditorJs\\FieldServiceProvider"
+                "CodedWords\\NovaEditorJs\\FieldServiceProvider"
             ]
         }
     },

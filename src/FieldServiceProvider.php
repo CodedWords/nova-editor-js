@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Advoor\NovaEditorJs;
+namespace CodedWords\NovaEditorJs;
 
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Laravel\Nova\Nova;
@@ -83,7 +83,7 @@ class FieldServiceProvider extends ServiceProvider
         /** @var ConfigRepository $config */
         $config = $this->app->get('config');
         if ($config->has('nova-editor-js.editorSettings.initialBlock')) {
-            trigger_deprecation('advoor/nova-editor-js', '3.1.0', 'The config key "editorSettings.initialBlock" is deprecated. Use "editorSettings.defaultBlock" instead.');
+            trigger_deprecation('codedWords/nova-editor-js', '3.1.0', 'The config key "editorSettings.initialBlock" is deprecated. Use "editorSettings.defaultBlock" instead.');
         }
     }
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Advoor\NovaEditorJs\Http\Controllers;
+namespace CodedWords\NovaEditorJs\Http\Controllers;
 
 use finfo;
 use Illuminate\Http\Client\ConnectionException;

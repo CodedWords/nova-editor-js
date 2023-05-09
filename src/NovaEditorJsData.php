@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Advoor\NovaEditorJs;
+namespace CodedWords\NovaEditorJs;
 
-use Advoor\NovaEditorJs\NovaEditorJs;
+use CodedWords\NovaEditorJs\NovaEditorJs;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Fluent;

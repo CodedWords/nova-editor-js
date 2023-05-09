@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\Feature\Http\Controllers;
 
-use Advoor\NovaEditorJs\Http\Controllers\EditorJsImageUploadController;
+use CodedWords\NovaEditorJs\Http\Controllers\EditorJsImageUploadController;
 use finfo;
 use Illuminate\Http\Response;
 use Illuminate\Http\UploadedFile;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Advoor\NovaEditorJs;
+namespace CodedWords\NovaEditorJs;
 
 use Illuminate\Support\Str;
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
