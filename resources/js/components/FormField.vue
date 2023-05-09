@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import { FormField, HandlesValidationErrors } from 'laravel-nova';
+import { FormField, FormEvents, HandlesValidationErrors } from 'laravel-nova';
 
 export default {
     mixins: [FormField, HandlesValidationErrors],
@@ -102,6 +102,10 @@ export default {
          */
         handleChange(value) {
             this.value = JSON.stringify(value);
+
+            if (this.field) {
+                this.emitFieldValueChange(this.field.attribute, this.value)
+            }
         },
     },
 };
