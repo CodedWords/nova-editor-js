@@ -8,7 +8,7 @@
     >
         <template #field>
             <div
-                :id="`editor-js-${field.attribute}`"
+                :id="`editor-js-${field.uniqueKey}-${field.attribute}`"
                 ref="input"
                 class="editor-js"
             />
@@ -41,7 +41,7 @@ export default {
                 /**
                  * Wrapper of Editor
                  */
-                holder: `editor-js-${self.field.attribute}`,
+                holder: `editor-js-${self.field.uniqueKey}-${self.field.attribute}`,
 
                 /**
                  * This Tool will be used as default
@@ -104,7 +104,7 @@ export default {
             this.value = JSON.stringify(value);
 
             if (this.field) {
-                this.emitFieldValueChange(this.field.attribute, this.value)
+                this.emitFieldValueChange(this.field.attribute, this.value);
             }
         },
     },
