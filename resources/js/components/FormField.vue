@@ -38,7 +38,7 @@ export default {
                 ? self.field.value
                 : JSON.parse(self.field.value);
 
-            const editor = new NovaEditorJS({
+            const editor = new EditorJS({
                 /**
                  * Wrapper of Editor
                  */
