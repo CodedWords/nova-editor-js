@@ -18,6 +18,7 @@
 
 <script>
 import { FormField, FormEvents, HandlesValidationErrors } from 'laravel-nova';
+import NovaEditorJS from '../nova-editor';
 
 export default {
     mixins: [FormField, HandlesValidationErrors],
@@ -37,7 +38,9 @@ export default {
                 ? self.field.value
                 : JSON.parse(self.field.value);
 
-            const editor = new NovaEditorJS({
+            const novaEditorJs = new NovaEditorJS();
+
+            const editor = novaEditorJs.getInstance({
                 /**
                  * Wrapper of Editor
                  */
